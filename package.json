@@ -1,0 +1,40 @@
+{
+  "name": "express-graphql-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/App.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon src/App.js",
+    "start": "node src/App.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "standard": "standard",
+    "standard-fix": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run standard"
+    }
+  },
+  "author": "estrada9166",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "dataloader": "^1.4.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.1",
+    "graphql-type-json": "^0.2.1",
+    "humps": "^2.0.1",
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.17.5",
+    "pg": "^7.4.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "husky": "^0.15.0-beta.13",
+    "nodemon": "^1.17.2",
+    "standard": "^11.0.0"
+  }
+}
